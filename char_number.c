@@ -25,9 +25,8 @@ int word_count(char *str, char c)
     int i = 0;
     int j = 0;
     char cc = c;
-    while (str[i] != '\0') {
-        if ((cc == c) && (str[i] != c)) {
-            j++;}
+    while (str[i] != '\0'){if ((cc == c)&&(str[i] != c)){
+        j++;}
         cc = str[i];
         i++;
     }return (j);
@@ -78,9 +77,9 @@ char *load_file(char const *filepath)
 
 int sd(char *str)
 {
-  int i = 0;
-  for (i = 0; str[i] != '\0'; i++);
-  return i;
+    int i = 0;
+    for (i = 0; str[i] != '\0'; i++);
+    return i;
 }
 
 int main(int ac, char **av)
